@@ -1,7 +1,8 @@
 import numpy as np
 
 
-def fetch_medal_tally(df,year,country):
+def fetch_medal_tally(df,year,country): 
+    # this is fetch medal tally function
     medal_df=df.drop_duplicates(subset=['Team','NOC','Games','Year','City','Sport','Event','Medal'])
     flag = 0
     if year == 'Overall' and country == 'Overall':
